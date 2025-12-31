@@ -482,32 +482,71 @@
             <h2 class="text-3xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">Get In Touch</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Contact Form -->
-                <div class="bg-gray-800 p-8 rounded-xl" data-aos="fade-right">
-                    <h3 class="text-xl font-semibold mb-6">Send Me a Message</h3>
-                    <form id="contact-form" class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
-                        </div>
-                        <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
-                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
-                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"></textarea>
-                        </div>
-                        <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-medium hover:opacity-90 transition flex items-center justify-center">
-                            <i data-feather="send" class="w-5 h-5 mr-2"></i>
-                            Send Message
-                        </button>
-                    </form>
-                    <div id="form-response" class="mt-4 hidden"></div>
-                </div>
+              <section id="contact">
+  <div class="bg-gray-800 p-8 rounded-xl" data-aos="fade-up">
+    <h3 class="text-xl font-semibold mb-6 text-white">
+      Send Me a Message
+    </h3>
+
+    <form action="https://formsubmit.co/abhishekpatelspace@icloud.com"
+          method="POST"
+          class="space-y-4">
+
+      <!-- Disable FormSubmit default captcha -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Name -->
+      <input
+        type="text"
+        name="name"
+        required
+        placeholder="Your Name"
+        class="w-full p-3 rounded bg-gray-700 text-white
+               placeholder-gray-400 focus:outline-none
+               focus:ring-2 focus:ring-pink-400"
+      />
+
+      <!-- Email -->
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Your Email"
+        class="w-full p-3 rounded bg-gray-700 text-white
+               placeholder-gray-400 focus:outline-none
+               focus:ring-2 focus:ring-pink-400"
+      />
+
+      <!-- Message -->
+      <textarea
+        name="message"
+        rows="5"
+        required
+        placeholder="Your Message"
+        class="w-full p-3 rounded bg-gray-700 text-white
+               placeholder-gray-400 focus:outline-none
+               focus:ring-2 focus:ring-pink-400"
+      ></textarea>
+
+      <!-- Google reCAPTCHA v2 -->
+      <div class="g-recaptcha" data-sitekey="6LcS9zssAAAAAKJujopFBc93dOASJPPyhFix6tZj"></div>
+
+      <!-- Submit -->
+      <button
+        type="submit"
+        class="w-full bg-pink-500 hover:bg-pink-600
+               text-white font-semibold py-3 rounded
+               transition duration-200">
+        Send Message
+      </button>
+
+    </form>
+  </div>
+</section>
+
+<!-- Google reCAPTCHA script -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
                 <!-- Contact Info -->
                 <div class="space-y-8" data-aos="fade-left">
                     <div>
@@ -604,6 +643,7 @@
 </body>
 
 </html>
+
 
 
 
