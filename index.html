@@ -477,15 +477,15 @@
     </section>
 
     <!-- Contact Section -->
-     <section id="contact">
-  <div class="bg-gray-800 p-6 rounded-xl" data-aos="fade-up">
-    <h3 class="text-lg font-semibold mb-4 text-white">
+    <section id="contact">
+  <div class="bg-gray-800 p-8 rounded-xl" data-aos="fade-up">
+    <h3 class="text-xl font-semibold mb-6 text-white">
       Send Me a Message
     </h3>
 
     <form action="https://formsubmit.co/el/goruli"
           method="POST"
-          class="space-y-3">
+          class="space-y-4">
 
       <!-- Disable FormSubmit default captcha -->
       <input type="hidden" name="_captcha" value="false">
@@ -496,7 +496,7 @@
         name="name"
         required
         placeholder="Your Name"
-        class="w-full p-2.5 rounded bg-gray-700 text-white text-sm
+        class="w-full p-3 rounded bg-gray-700 text-white
                placeholder-gray-400 focus:outline-none
                focus:ring-2 focus:ring-pink-400"
       />
@@ -507,7 +507,7 @@
         name="email"
         required
         placeholder="Your Email"
-        class="w-full p-2.5 rounded bg-gray-700 text-white text-sm
+        class="w-full p-3 rounded bg-gray-700 text-white
                placeholder-gray-400 focus:outline-none
                focus:ring-2 focus:ring-pink-400"
       />
@@ -518,7 +518,7 @@
         name="subject"
         required
         placeholder="Subject"
-        class="w-full p-2.5 rounded bg-gray-700 text-white text-sm
+        class="w-full p-3 rounded bg-gray-700 text-white
                placeholder-gray-400 focus:outline-none
                focus:ring-2 focus:ring-pink-400"
       />
@@ -526,16 +526,16 @@
       <!-- Message -->
       <textarea
         name="message"
-        rows="4"
+        rows="5"
         required
         placeholder="Your Message"
-        class="w-full p-2.5 rounded bg-gray-700 text-white text-sm
+        class="w-full p-3 rounded bg-gray-700 text-white
                placeholder-gray-400 focus:outline-none
                focus:ring-2 focus:ring-pink-400"
       ></textarea>
 
-      <!-- Google reCAPTCHA (scaled down) -->
-      <div class="transform scale-90 origin-left">
+      <!-- Google reCAPTCHA (kept normal size) -->
+      <div class="pt-2">
         <div class="g-recaptcha"
              data-sitekey="6LcS9zssAAAAAKJujopFBc93dOASJPPyhFix6tZj">
         </div>
@@ -545,7 +545,7 @@
       <button
         type="submit"
         class="w-full bg-pink-500 hover:bg-pink-600
-               text-white text-sm font-semibold py-2.5 rounded
+               text-white font-semibold py-3 rounded
                transition duration-200">
         Send Message
       </button>
@@ -553,7 +553,7 @@
     </form>
   </div>
 </section>
-<!-- Google reCAPTCHA script -->
+
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
                 <!-- Contact Info -->
@@ -652,6 +652,7 @@
 </body>
 
 </html>
+
 
 
 
