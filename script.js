@@ -111,12 +111,33 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1 });
 
+//chatbot integreted 
 const skillsSection = document.getElementById('skills');
 if (skillsSection) {
     observer.observe(skillsSection);
 };
+<script>
+async function sendMessage(){
+  const input = document.getElementById("userInput");
+  const msg = input.value;
+  if(!msg) return;
+
+  document.getElementById("chat-body").innerHTML += `<div><b>You:</b> ${msg}</div>`;
+  input.value = "";
+
+  const res = await fetch("https://YOUR_BACKEND_URL/chat",{
+    method:"POST",
+    headers:{ "Content-Type":"application/json" },
+    body: JSON.stringify({ message: msg })
+  });
+
+  const data = await res.json();
+  document.getElementById("chat-body").innerHTML += `<div><b>Bot:</b> ${data.reply}</div>`;
+}
+</script>
 
 // Call loadProjects on page load (commented out for static site)
 // window.addEventListener('DOMContentLoaded', (event) => {
 //     loadProjects();
+
 // });
