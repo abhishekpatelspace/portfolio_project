@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Patel | Data Scientist</title>
+    <meta name="description" content="Abhishek Patel is a Data Science graduate specializing in AI systems, predictive modeling, and data storytelling using Python, ML frameworks, and modern visualization." />
+    <meta name="keywords" content="Data Science, Machine Learning, AI, Python, Abhishek Patel, Data Storytelling, Analytics, Portfolio" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://abhishekpatelspace.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Abhishek Patel | Data Scientist" />
+    <meta property="og:description" content="Data Science graduate focused on turning complex data into business impact using machine learning, analytics, and storytelling." />
+    <meta property="og:url" content="https://abhishekpatelspace.com" />
+    <meta property="og:image" content="https://abhishekpatelspace.com/hero-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Abhishek Patel | Data Scientist" />
+    <meta name="twitter:description" content="AI & ML projects, datasets, and insights from Abhishek Patel." />
+    <meta name="twitter:image" content="https://abhishekpatelspace.com/hero-image.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <!-- CSS Libraries -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,13 +27,28 @@
     <!-- JS Libraries (needed in head for icons/menu) -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Abhishek Patel",
+            "url": "https://abhishekpatelspace.com",
+            "jobTitle": "Data Scientist",
+            "description": "Data Science graduate specializing in AI, predictive analytics, and storytelling through ML-powered dashboards.",
+            "sameAs": [
+                "https://www.linkedin.com/in/abhishekpatelspace/",
+                "https://github.com/abhishekpatelspace/",
+                "https://twitter.com/abhishekpatelspace/"
+            ]
+        }
+    </script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
-    <div id="vanta-bg"></div>
+    <div class="tech-background" id="techBg" aria-hidden="true"></div>
 
     <!-- Navigation -->
-    <nav class="fixed w-full bg-gray-900 bg-opacity-90 z-50 shadow-lg">
+    <header role="banner">
+        <nav class="fixed w-full backdrop-blur-md bg-gray-900 bg-opacity-70 border-b border-blue-800 border-opacity-30 z-50 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
@@ -51,40 +81,155 @@
             </div>
         </div>
     </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center pt-16">
+    <button id="background-toggle" class="bg-control" type="button" aria-label="Cycle background palette">
+        <span class="bg-control-text">Cycle sky</span>
+        <span class="bg-control-label" id="bg-palette-label">Aurora</span>
+    </button>
+
+    <main id="content" role="main">
+        <!-- Hero Section -->
+        <section id="home" class="galaxy-section min-h-screen flex items-center justify-center pt-16" aria-label="Hero">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="text-center" data-aos="fade-up">
-                <h1 class="text-5xl md:text-7xl font-bold mb-4">
-                    <span class="gradient-text">Abhishek Patel</span>
-                </h1>
-                <h2 class="text-2xl md:text-3xl text-gray-300 mb-8">Data Science Graduate | AI & ML Enthusiast</h2>
-                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12">
-                    Transforming data into actionable insights with cutting-edge machine learning techniques.
-                </p>
-                <div class="flex justify-center space-x-4">
-                    <a href="#contact" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:opacity-90 transition">Get In Touch</a>
-                    <a href="#projects" class="px-8 py-3 border border-gray-600 rounded-full font-medium hover:bg-gray-800 transition">View Projects</a>
+            <div class="hero-panel" data-aos="fade-up">
+                <div class="hero-content">
+                    <p class="text-sm uppercase tracking-[0.3em] text-blue-300 mb-4">Realtime AI Narratives</p>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-4">
+                        <span class="gradient-text">Abhishek Patel</span>
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl text-gray-300 mb-8">Data Science Graduate | AI & ML Enthusiast</h2>
+                    <p class="text-lg md:text-xl text-gray-400 max-w-3xl mb-10">
+                        Transforming data into actionable insights with cutting-edge machine learning techniques and immersive visual storytelling.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-3 mb-10">
+                        <a href="#contact" class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-medium hover:opacity-90 transition">Get In Touch</a>
+                        <a href="#projects" class="px-8 py-3 border border-blue-700 rounded-full text-blue-200 font-medium hover:bg-blue-900 transition">View Projects</a>
+                        <a href="#skills" class="px-8 py-3 bg-opacity-30 bg-white rounded-full font-medium hover:bg-opacity-50 transition">Explore Skills</a>
+                    </div>
+                </div>
+                <div class="hero-stats" data-aos="fade-left" data-aos-delay="200">
+                    <div class="hero-stat-card">
+                        <p class="text-xs uppercase tracking-wide text-blue-300">Live Signal</p>
+                        <p class="text-2xl font-semibold">0.98</p>
+                        <p class="text-gray-400 text-sm">Confidence in predictive pipelines</p>
+                    </div>
+                    <div class="hero-stat-card">
+                        <p class="text-xs uppercase tracking-wide text-green-300">Latency</p>
+                        <p class="text-2xl font-semibold">120ms</p>
+                        <p class="text-gray-400 text-sm">Average inference time</p>
+                    </div>
+                    <div class="hero-stat-card">
+                        <p class="text-xs uppercase tracking-wide text-pink-300">Impact</p>
+                        <p class="text-2xl font-semibold">4.6★</p>
+                        <p class="text-gray-400 text-sm">Stakeholder satisfaction (2025)</p>
+                    </div>
+                </div>
+                <div class="hero-floating" data-aos="zoom-in" data-aos-delay="400">
+                    <p class="text-blue-200 text-sm">Realtime Pulses</p>
+                    <div class="pulse-bars">
+                        <span style="--delay:0s"></span>
+                        <span style="--delay:0.2s"></span>
+                        <span style="--delay:0.4s"></span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">Telemetry from ongoing ML systems.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-800">
+        <!-- Resume Section -->
+        <section id="resume" class="galaxy-section py-20" aria-label="Resume highlights">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">    
+            <div class="resume-section" data-aos="fade-up">
+                <div>
+                    <p class="text-xs uppercase tracking-[0.5em] text-indigo-400 mb-3">Resume snapshot</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Impact-driven resume</h2>
+                    <p class="text-gray-300 text-lg mb-6">
+                        Download a curated version of my CV that highlights leadership in AI projects, mentoring experience, and measurable business outcomes across data, product, and storytelling roles.
+                    </p>
+                    <div class="resume-cta flex flex-wrap gap-3">
+                        <a href="resume/Abhishek-Patel-Resume.pdf" download="Abhishek-Patel-Resume.pdf" class="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 font-medium uppercase tracking-widest text-xs">Download PDF</a>
+                        <a href="#contact" class="px-6 py-3 rounded-full border border-gray-600 text-xs uppercase tracking-widest font-medium">Request consultation</a>
+                    </div>
+                </div>
+                <div class="resume-points grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10 sm:mt-0">
+                    <article class="resume-card">
+                        <h3 class="text-sm uppercase tracking-[0.4em] text-blue-300 mb-2">Experience</h3>
+                        <p class="text-lg font-semibold text-gray-100">5+ years</p>
+                        <p class="text-sm text-gray-400">AI & data science leadership across consultancy and in-house teams.</p>
+                    </article>
+                    <article class="resume-card">
+                        <h3 class="text-sm uppercase tracking-[0.4em] text-blue-300 mb-2">Impact</h3>
+                        <p class="text-lg font-semibold text-gray-100">500M+ records</p>
+                        <p class="text-sm text-gray-400">Optimized streaming pipelines, dashboards, and ML deployments.</p>
+                    </article>
+                    <article class="resume-card">
+                        <h3 class="text-sm uppercase tracking-[0.4em] text-blue-300 mb-2">Tools</h3>
+                        <p class="text-lg font-semibold text-gray-100">Python · SQL · Spark</p>
+                        <p class="text-sm text-gray-400">Modern ML infra, observability, and data storytelling.</p>
+                    </article>
+                    <article class="resume-card">
+                        <h3 class="text-sm uppercase tracking-[0.4em] text-blue-300 mb-2">Delivery</h3>
+                        <p class="text-lg font-semibold text-gray-100">Fractional & in-house</p>
+                        <p class="text-sm text-gray-400">Guided analytics strategy, mentorship pods, and stakeholder updates.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Story Section -->
+        <section id="story" class="galaxy-section py-20" aria-label="Impact story">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="story-section" data-aos="fade-up">
+                <div class="story-header">
+                    <p class="text-xs uppercase tracking-[0.5em] text-teal-300 mb-2">Impact timeline</p>
+                    <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Story-driven milestones</h2>
+                    <p class="text-gray-300 max-w-3xl">
+                        Each step below tracks how I scaled delivery, deepened impact, and kept the tech background synchronized with every win—so the grid pulses as the story moves forward.
+                    </p>
+                </div>
+                <div class="story-track" data-aos="fade-up" data-aos-delay="200">
+                    <article class="story-step" data-year="2020">
+                        <span class="story-year">2020</span>
+                        <h3>Built resilient data fabrics</h3>
+                        <p>Ramped analytics infrastructure for high-volume telecom data, cutting ingestion latency by 40% with Spark + Airflow.</p>
+                    </article>
+                    <article class="story-step" data-year="2021">
+                        <span class="story-year">2021</span>
+                        <h3>Guided AI steering committees</h3>
+                        <p>Led cross-functional pods to align generative AI pilots with ethical guardrails and executive KPIs.</p>
+                    </article>
+                    <article class="story-step" data-year="2022">
+                        <span class="story-year">2022</span>
+                        <h3>Published decision intelligence</h3>
+                        <p>Delivered dashboards and verifiable narratives that elevated storytelling across finance and ops functions.</p>
+                    </article>
+                    <article class="story-step" data-year="2024">
+                        <span class="story-year">2024</span>
+                        <h3>Scaled realtime forecasting</h3>
+                        <p>Deployed low-latency ML services and observability, enabling teams to operationalize insights before the quarter closed.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- About Section -->
+        <section id="about" class="galaxy-section py-20" aria-label="About">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">About Me</h2>
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/3" data-aos="fade-right">
                     <div class="rounded-full overflow-hidden border-4 border-gray-700 shadow-xl">
-                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQE5O9OzvRejpw/profile-displayphoto-scale_200_200/B4DZrP_EhIH4Ac-/0/1764426011536?e=1768435200&v=beta&t=YfADrglk-YIt8d0zviTUk9i1H_iNxL0xPg0uNug9EcE" alt="Abhishek Patel" class="w-full h-auto">
+                        <img src="images/profile.jpeg" alt="Abhishek Patel" class="w-full h-auto">
                     </div>
                 </div>
                 <div class="md:w-2/3" data-aos="fade-left">
                     <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
                     <p class="text-gray-300 mb-6">
-                        I'm Abhishek Patel, a passionate Data Science graduate with a background in Electronics and Communication Engineering. Currently pursuing my post-graduation from School of Data Science, DAVV Indore M.P., I specialize in transforming complex data into meaningful insights using machine learning and AI.
+                        I'm Abhishek Patel, a passionate Data Science graduate with a background in Electronics and Communication Engineering. Currently pursuing my post-graduation from DAVV University, I specialize in transforming complex data into meaningful insights using machine learning and AI.
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="bg-gray-700 p-6 rounded-lg">
@@ -93,8 +238,8 @@
                                 <h4 class="font-medium">Education</h4>
                             </div>
                             <ul class="space-y-2 text-gray-300">
-                                <li>• Post Graduation in Data Science - School of Data Science, DAVV Indore M.P. (Current)</li>
-                                <li>• B.Tech in ECE - RGPV Bhopal</li>
+                                <li>• Post Graduation in Data Science - DAVV University (Current)</li>
+                                <li>• B.Tech in ECE - RGPV </li>
                             </ul>
                         </div>
                         <div class="bg-gray-700 p-6 rounded-lg">
@@ -103,9 +248,9 @@
                                 <h4 class="font-medium">Experience</h4>
                             </div>
                             <ul class="space-y-2 text-gray-300">
-                                <li>• Data Science Intern at TechSolutions (subject to change)</li>
-                                <li>• Research Assistant at DAVV University AI Lab (subject to change)</li>
-                                <li>• Freelance Data Analyst (subject to change)</li>
+                                <li>• Data Science Intern at .........</li>
+                                <li>• Research Assistant at ..........</li>
+                                <li>• Freelance ML Engineer</li>
                             </ul>
                         </div>
                     </div>
@@ -114,8 +259,8 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-900">
+        <!-- Skills Section -->
+        <section id="skills" class="galaxy-section py-20" aria-label="Skills">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">My Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -211,97 +356,125 @@
                 </div>
             </div>
             <!-- Tools & Technologies -->
-            <section>
-  <div class="bg-gray-800 p-8 rounded-xl" data-aos="fade-up">
-    <h3 class="text-xl font-semibold mb-6 flex items-center text-white">
-      <i data-feather="tool" class="w-5 h-5 mr-2 text-pink-400"></i>
-      Tools & Technologies
-    </h3>
+                <div class="bg-gray-800 p-8 rounded-xl" data-aos="fade-right">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <i data-feather="tool" class="w-5 h-5 mr-2 text-pink-400"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="tools-scroll">
+                        <div class="tools-track flex gap-4">
+                            <div class="px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                        <i data-feather="database" class="w-4 h-4 mr-2 text-blue-400"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                        <i data-feather="database" class="w-4 h-4 mr-2 text-green-400"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                        <i data-feather="database" class="w-4 h-4 mr-2 text-red-400"></i>
+                        <span>Redis</span>
+                    </div>
+                    <div class="px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                        <i data-feather="file-text" class="w-4 h-4 mr-2 text-yellow-400"></i>
+                        <span>Advanced Excel</span>
+                    </div>
+                    <div class="px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                        <i data-feather="cpu" class="w-4 h-4 mr-2 text-purple-400"></i>
+                        <span>TensorFlow</span>
+                    </div>
+                    <div class="px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                        <i data-feather="bar-chart" class="w-4 h-4 mr-2 text-pink-400"></i>
+                        <span>Tableau</span>
+                    </div>
+                    <div class="px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                        <i data-feather="git-merge" class="w-4 h-4 mr-2 text-orange-400"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tool-chip px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                        <img src="images/logos/scikitlearn.svg" alt="Scikit-learn logo" class="h-4 w-4 mr-2">
+                        <span>Scikit-learn</span>
+                    </div>
+                    <div class="tool-chip px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                        <img src="images/logos/numpy.svg" alt="NumPy logo" class="h-4 w-4 mr-2">
+                        <span>NumPy</span>
+                    </div>
+                    <div class="tool-chip px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                        <img src="images/logos/pandas.svg" alt="Pandas logo" class="h-4 w-4 mr-2">
+                        <span>Pandas</span>
+                    </div>
+                    <div class="tool-chip px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                        <img src="images/logos/matplotlib.svg" alt="Matplotlib logo" class="h-4 w-4 mr-2">
+                        <span>Matplotlib</span>
+                    </div>
+                            <div class="tool-chip px-4 py-2 bg-gray-700 rounded-full flex items-center">
+                                <img src="images/logos/powerbi.svg" alt="Power BI logo" class="h-4 w-4 mr-2">
+                                <span>Power BI</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="flex flex-wrap gap-4">
+        <!-- Live Data Section -->
+        <section id="live-data" class="galaxy-section py-20" aria-label="Live data widgets">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">Live Signals</h2>
+                <div class="live-grid" data-aos="fade-up" data-aos-delay="200">
+                    <article class="live-widget" id="github-widget">
+                        <header class="widget-header">
+                            <p class="text-xs uppercase tracking-wide text-blue-300">GitHub Pulse</p>
+                            <p class="text-gray-400 text-sm" id="github-meta">Connecting...</p>
+                        </header>
+                        <p class="widget-value">Loading stats...</p>
+                        <footer class="widget-footer">
+                            <span class="widget-subtext" id="github-subtext">Follower count · Public repos</span>
+                        </footer>
+                    </article>
+                    <article class="live-widget" id="medium-widget">
+                        <header class="widget-header">
+                            <p class="text-xs uppercase tracking-wide text-pink-300">Medium Dispatch</p>
+                            <p class="text-gray-400 text-sm" id="medium-meta">Fetching latest post...</p>
+                        </header>
+                        <p class="widget-value">Awaiting story...</p>
+                        <footer class="widget-footer">
+                            <a href="#" class="widget-link" id="medium-link" target="_blank" rel="noreferrer">Go to Medium</a>
+                        </footer>
+                    </article>
+                    <article class="live-widget" id="kaggle-widget">
+                        <header class="widget-header">
+                            <p class="text-xs uppercase tracking-wide text-yellow-300">Kaggle Rank</p>
+                            <p class="text-gray-400 text-sm">API not open</p>
+                        </header>
+                        <p class="widget-value" id="kaggle-value">Data collaborator</p>
+                        <footer class="widget-footer">
+                            <span class="widget-subtext" id="kaggle-subtext">Manual sync</span>
+                        </footer>
+                    </article>
+                    <article class="live-widget visitor-widget" id="visitor-widget">
+                        <header class="widget-header">
+                            <p class="text-xs uppercase tracking-wide text-green-300">Visitor Count</p>
+                            <p class="text-gray-400 text-sm" id="visitor-meta">Connecting...</p>
+                        </header>
+                        <p class="widget-value" id="visitor-value">0</p>
+                        <footer class="widget-footer">
+                            <span class="widget-subtext" id="visitor-subtext">Live counter powered by CountAPI</span>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-      <a href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer"
-         class="px-4 py-2 bg-gray-700 rounded-full flex items-center
-                text-gray-200 hover:text-white hover:bg-gray-600
-                transition duration-200 focus:outline-none focus:ring-2 focus:ring-pink-400">
-        <i data-feather="database" class="w-4 h-4 mr-2 text-blue-400"></i>
-        <span>MySQL</span>
-      </a>
-
-      <a href="https://www.mongodb.com/docs/" target="_blank" rel="noopener noreferrer"
-         class="px-4 py-2 bg-gray-700 rounded-full flex items-center
-                text-gray-200 hover:text-white hover:bg-gray-600
-                transition duration-200 focus:outline-none focus:ring-2 focus:ring-pink-400">
-        <i data-feather="database" class="w-4 h-4 mr-2 text-green-400"></i>
-        <span>MongoDB</span>
-      </a>
-
-      <a href="https://redis.io/docs/latest/" target="_blank" rel="noopener noreferrer"
-         class="px-4 py-2 bg-gray-700 rounded-full flex items-center
-                text-gray-200 hover:text-white hover:bg-gray-600
-                transition duration-200 focus:outline-none focus:ring-2 focus:ring-pink-400">
-        <i data-feather="database" class="w-4 h-4 mr-2 text-red-400"></i>
-        <span>Redis</span>
-      </a>
-
-      <a href="https://support.microsoft.com/en-us/excel" target="_blank" rel="noopener noreferrer"
-         class="px-4 py-2 bg-gray-700 rounded-full flex items-center
-                text-gray-200 hover:text-white hover:bg-gray-600
-                transition duration-200 focus:outline-none focus:ring-2 focus:ring-pink-400">
-        <i data-feather="file-text" class="w-4 h-4 mr-2 text-yellow-400"></i>
-        <span>Advanced Excel</span>
-      </a>
-
-      <a href="https://www.tensorflow.org/" target="_blank" rel="noopener noreferrer"
-         class="px-4 py-2 bg-gray-700 rounded-full flex items-center
-                text-gray-200 hover:text-white hover:bg-gray-600
-                transition duration-200 focus:outline-none focus:ring-2 focus:ring-pink-400">
-        <i data-feather="cpu" class="w-4 h-4 mr-2 text-purple-400"></i>
-        <span>TensorFlow</span>
-      </a>
-
-      <a href="https://scikit-learn.org/stable/" target="_blank" rel="noopener noreferrer"
-         class="px-4 py-2 bg-gray-700 rounded-full flex items-center
-                text-gray-200 hover:text-white hover:bg-gray-600
-                transition duration-200 focus:outline-none focus:ring-2 focus:ring-pink-400">
-        <i data-feather="box" class="w-4 h-4 mr-2 text-indigo-400"></i>
-        <span>Scikit-learn</span>
-      </a>
-
-      <a href="https://www.tableau.com/learn" target="_blank" rel="noopener noreferrer"
-         class="px-4 py-2 bg-gray-700 rounded-full flex items-center
-                text-gray-200 hover:text-white hover:bg-gray-600
-                transition duration-200 focus:outline-none focus:ring-2 focus:ring-pink-400">
-        <i data-feather="bar-chart" class="w-4 h-4 mr-2 text-pink-400"></i>
-        <span>Tableau</span>
-      </a>
-
-      <a href="https://git-scm.com/docs" target="_blank" rel="noopener noreferrer"
-         class="px-4 py-2 bg-gray-700 rounded-full flex items-center
-                text-gray-200 hover:text-white hover:bg-gray-600
-                transition duration-200 focus:outline-none focus:ring-2 focus:ring-pink-400">
-        <i data-feather="git-merge" class="w-4 h-4 mr-2 text-orange-400"></i>
-        <span>Git</span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<script>
-  feather.replace();
-</script>
-
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-800">
+        <!-- Projects Section -->
+        <section id="projects" class="galaxy-section py-20" aria-label="Projects">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
                 <div class="project-card bg-gray-900 rounded-xl overflow-hidden shadow-lg transition duration-500" data-aos="zoom-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="http://static.photos/technology/640x360/101" alt="Sentiment Analysis" class="w-full h-full object-cover">
+                        <img src="images/sentiment.jpg" alt="Sentiment Analysis" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
@@ -329,7 +502,7 @@
                 <!-- Project 2 -->
                 <div class="project-card bg-gray-900 rounded-xl overflow-hidden shadow-lg transition duration-500" data-aos="zoom-in" data-aos-delay="100">
                     <div class="h-48 overflow-hidden">
-                        <img src="http://static.photos/technology/640x360/102" alt="Stock Prediction" class="w-full h-full object-cover">
+                        <img src="images/stock.jpg" alt="Stock Prediction" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
@@ -357,7 +530,7 @@
                 <!-- Project 3 -->
                 <div class="project-card bg-gray-900 rounded-xl overflow-hidden shadow-lg transition duration-500" data-aos="zoom-in" data-aos-delay="200">
                     <div class="h-48 overflow-hidden">
-                        <img src="http://static.photos/technology/640x360/103" alt="Customer Segmentation" class="w-full h-full object-cover">
+                        <img src="images/segmentation.jpg" alt="Customer Segmentation" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
@@ -385,7 +558,7 @@
                 <!-- Project 4 -->
                 <div class="project-card bg-gray-900 rounded-xl overflow-hidden shadow-lg transition duration-500" data-aos="zoom-in">
                     <div class="h-48 overflow-hidden">
-                        <img src="http://static.photos/technology/640x360/104" alt="Fraud Detection" class="w-full h-full object-cover">
+                        <img src="images/fraud.jpg" alt="Fraud Detection" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
@@ -413,7 +586,7 @@
                 <!-- Project 5 -->
                 <div class="project-card bg-gray-900 rounded-xl overflow-hidden shadow-lg transition duration-500" data-aos="zoom-in" data-aos-delay="100">
                     <div class="h-48 overflow-hidden">
-                        <img src="http://static.photos/technology/640x360/105" alt="Recommendation System" class="w-full h-full object-cover">
+                        <img src="images/recommendation.jpg" alt="Recommendation System" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
@@ -441,7 +614,7 @@
                 <!-- Project 6 -->
                 <div class="project-card bg-gray-900 rounded-xl overflow-hidden shadow-lg transition duration-500" data-aos="zoom-in" data-aos-delay="200">
                     <div class="h-48 overflow-hidden">
-                        <img src="http://static.photos/technology/640x360/106" alt="Chatbot" class="w-full h-full object-cover">
+                        <img src="images/chatbot.jpg" alt="Chatbot" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
@@ -476,86 +649,38 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-  <div class="bg-gray-800 p-8 rounded-xl" data-aos="fade-up">
-    <h3 class="text-xl font-semibold mb-6 text-white">
-      Send Me a Message
-    </h3>
-
-    <form action="https://formsubmit.co/el/goruli"
-          method="POST"
-          class="space-y-4">
-
-      <!-- Disable FormSubmit default captcha -->
-      <input type="hidden" name="_captcha" value="false">
-
-      <!-- Name -->
-      <input
-        type="text"
-        name="name"
-        required
-        placeholder="Your Name"
-        class="w-full p-3 rounded bg-gray-700 text-white
-               placeholder-gray-400 focus:outline-none
-               focus:ring-2 focus:ring-pink-400"
-      />
-
-      <!-- Email -->
-      <input
-        type="email"
-        name="email"
-        required
-        placeholder="Your Email"
-        class="w-full p-3 rounded bg-gray-700 text-white
-               placeholder-gray-400 focus:outline-none
-               focus:ring-2 focus:ring-pink-400"
-      />
-
-      <!-- Subject -->
-      <input
-        type="text"
-        name="subject"
-        required
-        placeholder="Subject"
-        class="w-full p-3 rounded bg-gray-700 text-white
-               placeholder-gray-400 focus:outline-none
-               focus:ring-2 focus:ring-pink-400"
-      />
-
-      <!-- Message -->
-      <textarea
-        name="message"
-        rows="5"
-        required
-        placeholder="Your Message"
-        class="w-full p-3 rounded bg-gray-700 text-white
-               placeholder-gray-400 focus:outline-none
-               focus:ring-2 focus:ring-pink-400"
-      ></textarea>
-
-      <!-- Google reCAPTCHA (kept normal size) -->
-      <div class="pt-2">
-        <div class="g-recaptcha"
-             data-sitekey="6LcS9zssAAAAAKJujopFBc93dOASJPPyhFix6tZj">
-        </div>
-      </div>
-
-      <!-- Submit -->
-      <button
-        type="submit"
-        class="w-full bg-pink-500 hover:bg-pink-600
-               text-white font-semibold py-3 rounded
-               transition duration-200">
-        Send Message
-      </button>
-
-    </form>
-  </div>
-</section>
-
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+        <!-- Contact Section -->
+        <section id="contact" class="galaxy-section py-20" aria-label="Contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">Get In Touch</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-800 p-8 rounded-xl" data-aos="fade-right">
+                    <h3 class="text-xl font-semibold mb-6">Send Me a Message</h3>
+                    <form id="contact-form" action=https://formspree.io/f/movkaelj method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-300 mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-medium hover:opacity-90 transition flex items-center justify-center">
+                            <i data-feather="send" class="w-5 h-5 mr-2"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-response" class="mt-4 hidden" aria-live="polite" aria-atomic="true" role="status"></div>
+                </div>
                 <!-- Contact Info -->
                 <div class="space-y-8" data-aos="fade-left">
                     <div>
@@ -614,8 +739,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    
+        </section>
+    </main>
+
     <!-- Footer -->
     <footer class="bg-gray-900 border-t border-gray-800 py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -633,7 +759,7 @@
                 </div>
             </div>
             <div class="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">© 2025 Abhishek Patel. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">© 2023 Abhishek Patel. All rights reserved.</p>
                 <div class="mt-4 md:mt-0">
                     <a href="#" class="text-gray-500 hover:text-white text-sm mr-4">Privacy Policy</a>
                     <a href="#" class="text-gray-500 hover:text-white text-sm">Terms of Service</a>
@@ -649,22 +775,5 @@
     <script>
         feather.replace();
     </script>
-
-
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
